@@ -1,0 +1,459 @@
+/*########### DEFAULT #############*/
+nav,header,footer{
+    
+    display: block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+}
+
+label{
+    
+    font-size: 35px;
+    font-weight: 600px;
+}
+
+p{
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+article p{
+    
+    font-size: 31px;
+    padding: 20px;
+    color: floralwhite;
+    text-shadow: 1px -2px 1px black;
+}
+
+.container{
+    
+    width: 100;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+/*########### NAV BAR #############*/
+
+nav {
+    
+    margin: 0;
+    width: 100%;
+    
+}
+
+nav ul{
+    
+    overflow: hidden;
+    background-color: #eee;   
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    
+}
+
+ul.topnav li{
+    
+    list-style: none;
+/*    float: left;*/
+    display: inline-block;
+    
+}
+
+ul.topnav li.topnav-right{
+    float: right;
+}
+
+ul.topnav li a{
+    
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.topnav li a:hover{
+    
+    background-color: #0080ff;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+ul.topnav li.dropdownIcon{
+        
+        display: none;
+
+    }
+
+/*########### CUSTOM STYLES #############*/
+
+#section-1-gradient{
+    
+    background: #076DFF; /* For browser that don't support Gradients */
+    background: -webkit-linear-gradient(#076DFF,#65a5ff);/* For safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#076DFF,#65a5ff);/* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#076DFF,#65a5ff);/* For Firefox 3.6 to 15 */
+     background: linear-gradient(#076DFF,#65a5ff);/* Standard syntax */   
+}
+
+* {
+    
+    box-sizing: border-box;
+}
+
+.imageContainer{
+    width="560";
+    height="315";
+    padding: 1%;
+}
+
+.section2Header span{
+    color: darkblue;
+}
+
+#midSection{
+    background: linear-gradient(#076DFF,#65a5ff);
+}
+
+div.box{
+    
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.1);
+    transition: all 0.5s ease-in-out;
+}
+
+div.box:hover{
+    color: white;
+    background: linear-gradient(45deg,darkblue,#0077ffad,blue,#0077ffad ,darkblue);
+    text-shadow: 0 0 9px black;
+    box-shadow: 10px -12px 25px rgb(0, 128, 128);
+    cursor: pointer;
+}
+
+div.icon{
+    
+    width: 100%;    
+}
+
+div.icon img{
+   width: 20vh;
+    height: 20vh;
+}
+
+div.bottomPic img{
+    
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 5px 20px rgba(0,0,0,.15),2px 2px 17px 0 rgba(0,0,0,1);
+    
+}
+button{
+    
+    font-size: 32px;
+    font-weight: 700px;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+button.learnMore{
+    
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+}
+
+button.learnMore:hover{
+    background: linear-gradient(45deg, #03a9f4,pink,lightgreen,cyan,orange, #f441a5,#ffeb3b,#03a9f4); 
+    color: darkblue;
+    font-weight: bold;
+    animation: animate 15s linear infinite;
+    background-size: 800%;
+    filter: drop-shadow(3px 6px 24px #03a9f4 );
+    cursor: pointer;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+
+.leftside-col{
+    
+    margin-left:30%;  
+}
+
+.rightside-col{
+    
+    margin-left: 15%; 
+}
+label{
+    font-weight: bold;
+}
+.row{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1%;
+    
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.row.bottonCards::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66;}
+.col-12{width: 100%;}
+
+h1.large{
+    color: #fff;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+    letter-spacing: 5px;
+}
+
+h1.section2Header, h1.teamHeading{
+    font-size: 65px;
+    text-align: center;
+    padding: 5%;
+    margin-top: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+h1.section2Header:hover, h1.teamHeading:hover{
+    color:floralwhite;
+    background: linear-gradient(#076DFF,#65a5ff);
+    
+}
+.section2Header span:hover{
+    color:red;
+    cursor: text;
+}
+
+form h2{
+    
+    color: #fff;
+}
+
+input[type="text"]{
+   
+     font-size: 20px;
+     width: 400px;
+     min-width: 100px;
+     padding: 5px;
+     border-radius: 7px;
+}
+
+input[type="password"]{
+   
+     font-size: 20px;
+     width: 400px;
+     min-width: 100px;
+     padding: 5px;
+     border-radius: 7px;
+}
+
+.container2{
+    
+    width: 100;
+    margin: auto;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+.container2 h1{
+    color: darkblue;
+    text-transform: uppercase;
+}
+
+.bottonCards{
+    margin-left: 10rem;
+}
+
+.box.bottomBox:hover{
+    background: linear-gradient(45deg,cyan,violet,darkblue,cyan,violet,skyblue);
+}
+
+
+footer.footsy{
+    
+    background-color: #2196F3;
+    padding-left: 10%;
+    margin-bottom: 0;
+    text-shadow: 1px -2px 1px black;
+    
+}
+
+footer.footsy h1{
+    
+    color: white;
+    font-size: 35px;
+}
+
+artter.footsy ul{
+    
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footsy ul li{
+    
+    font-size: 22px;
+    line-height: 1.2;
+    color: white;
+}
+
+.mobileStack:hover::first-line{
+    color: red;
+    cursor: text;
+}
+
+/*########### MOBILE #############*/
+
+@media screen and (max-width:680px){
+    
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon{
+        
+        display: block;
+        float: right;
+    }
+    
+     ul.topnav.responsive li.dropdownIcon{
+        
+         position: absolute;
+         top: 0;
+         right: 0;
+    }
+    
+    ul.topnav.responsive {
+        
+        position: relative;
+    }
+    
+    ul.topnav.responsive li{
+        
+        display: inline;
+        float: none;
+    }
+    
+     ul.topnav.responsive li a{
+        
+        display: block;
+        text-align: left;
+    }
+    
+    h1.section2Header,h1.teamHeading{
+        font-size: 45px;
+    }
+    
+    article p{
+        
+        font-size: 25px;
+    }
+    
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-3,
+    .col-4, .imageContainer{
+        width: 95%;
+        margin: 0;    
+    }
+    
+    .imageContainer{
+        overflow: hidden;
+        padding: 2%;
+        margin: 0;
+    }
+    
+    div.mobileStack{
+        
+        width: 50%;
+        display: block;
+    }
+    div.box,div.box.bottomBox{
+        
+        padding:5px;
+        display: block;
+    }
+    
+    div.box.bottomBox{
+        margin-left: 1%;
+        float: left;
+    }
+    
+    div.bottomPic{
+        margin: 10px;
+    }
+    
+    div.bottomPic img{
+        width: 100%;
+    }
+    
+    div.leftside-col,
+    div.rightside-col{
+        
+        margin: 15px;
+    }
+    
+    input[type="text"]{
+        
+        width: 350px;
+    }
+    
+    .videoContainer iframe{
+        
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+}
