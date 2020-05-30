@@ -1,5 +1,4 @@
- 
-alert('Hover over each element to see animations');
+
 
 function dropdownMenu() {
     'use strict';
