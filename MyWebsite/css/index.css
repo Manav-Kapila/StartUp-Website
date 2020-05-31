@@ -215,7 +215,7 @@ label{
 }
 .row{
     
-    width: 100%;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -365,6 +365,9 @@ footer.footsy ul li{
         display: block;
         float: right;
     }
+    nav ul{
+        width: 100%;
+    }
     
      ul.topnav.responsive li.dropdownIcon{
         
@@ -396,7 +399,7 @@ footer.footsy ul li{
     
     article p{
         
-        font-size: 25px;
+        font-size: 22px;
     }
     
     .col-7,
@@ -408,28 +411,26 @@ footer.footsy ul li{
         margin: 0;    
     }
     
-    .imageContainer{
-        overflow: hidden;
-        padding: 2%;
-        margin: 0;
-    }
+    button.learnMore {
+    font-size: inherit;
+}
     
     div.mobileStack{
         
         width: 50%;
         display: block;
     }
-    div.box,div.box.bottomBox{
+    div.box,div.row.bottomCards{
         
         padding:5px;
         display: block;
     }
     
-    div.box.bottomBox{
-        margin-left: 1%;
-        float: left;
-    }
-    
+   .bottonCards {
+    margin-left: 11vh;
+    margin-right: 5vh;
+    padding: 1%;
+}
     div.bottomPic{
         margin: 10px;
     }
@@ -444,16 +445,41 @@ footer.footsy ul li{
         margin: 15px;
     }
     
-    input[type="text"]{
+    input[type="text"],input[type="password"]{
         
-        width: 350px;
+        width: 50vh;
     }
     
-    .videoContainer iframe{
-        
+    .imageContainer{  
         position: relative;
+        padding: 2%;
+        width: 90%;
+        margin: 0;
+        overflow: hidden;
+    }
+     
+    .imageContainer img{   
         width: 100%;
         margin: 0;
         overflow: hidden;
+    }
+    
+    div.icon img {
+    width: 12vh;
+    height: 12vh;
+    }
+    
+    .container2{
+        width: 100%;
+        text-align: left;
+        margin-left: 0px;
+    }
+    
+    p, footer.footsy ul li{
+        font-size: 16px;
+    }
+    
+    label, footer.footsy h1{
+        font-size: 24px;
     }
 }
